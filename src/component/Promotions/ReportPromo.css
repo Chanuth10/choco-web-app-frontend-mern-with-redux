@@ -1,0 +1,44 @@
+.promotopicrep {
+  color: #34251f;
+  font-size: 40px;
+  margin-left: 10px;
+}
+.repstatus {
+  color: #34251f;
+  margin-left: 100px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.reptype {
+  color: #34251f;
+  margin-left: 30px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.reppromoselect {
+  border: 2px solid #917236;
+  width: 150px;
+  height: 30px;
+  font-size: 15px;
+}
+.repop {
+  font-size: 15px;
+}
+.choosereport {
+  margin-top: 10px;
+}
+.reportpromo {
+  width: 93%;
+  margin-top: 50px;
+  border: 1px solid black;
+  max-height: 80vh;
+  overflow-y: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.reportpromotopic {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #34251f;
+}
