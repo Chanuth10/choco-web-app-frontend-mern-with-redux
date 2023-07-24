@@ -1,0 +1,38 @@
+.sidebar {
+  background-color: #34251F;
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+
+  height: 100vh;
+}
+
+.sidebar>a:first-child {
+  padding: 0;
+}
+
+.sidebar>a>img {
+  width: 70%;
+  margin-left: 25px;
+  transition: all 0.5s;
+  padding: 1vmax 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #ffffff;
+  font: 220 1rem "Roboto";
+  padding: 1rem 1.2rem;
+  transition: all 0.5s;
+}
+
+.sidebar a>P {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar a>p>svg {
+  margin-right: 0.5rem;
+}
