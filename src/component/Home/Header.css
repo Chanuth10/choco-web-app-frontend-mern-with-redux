@@ -1,0 +1,36 @@
+.inputBox > span {
+  font-family: "Poppins";
+  animation: sliding 14s linear infinite;
+  display: block;
+}
+
+@keyframes sliding {
+  0% {
+    transform: translateX(-70%);
+  }
+
+  100% {
+    transform: translateX(130%);
+  }
+}
+
+.Header li {
+  color: #917236;
+}
+
+input[type="text"] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #917236;
+  border-radius: 4px;
+  font-size: 12px;
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 8px 10px 8px 20px;
+  transition: all 0.5s ease-out;
+}
+
+input[type="text"]:focus {
+  width: 100%;
+}
