@@ -4,7 +4,7 @@ import axios from "axios";
 
 // Add to favourites
 export const addFavouriteItemsToCart = (id,quantity) => async (dispatch, getState) =>{
-    const {data} = await axios.get(`https://choco-e-app.onrender.com/api/v2/product/${id}`);
+    const {data} = await axios.get(`/api/v2/product/${id}`);
 
     dispatch({
         type: ADD_TO_FAVOURITE,

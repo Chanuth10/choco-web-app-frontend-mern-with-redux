@@ -6,6 +6,7 @@ import {
   productDetailsReducer,
   deleteProductReducer,
   newProductReducer,
+  newReviewReducer,
 } from "./reducers/ProductReducer";
 import { cartReducer } from "./reducers/CartReducer";
 import { favouriteReducer } from "./reducers/FavouriteReducer";
@@ -54,6 +55,7 @@ const reducer = combineReducers({
   createCategory: newCategoryReducer,
   user: userReducer,
   cart: cartReducer,
+  newReview: newReviewReducer,
   favourite: favouriteReducer,
   AllOrders: allOrdersReducer,
   favourite: favouriteReducer,

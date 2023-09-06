@@ -42,23 +42,6 @@ const Sidebar = () => {
           Users
         </p>
       </Link>
-      <Link to="/admin/Promotions">
-        <p>
-          <ListAltIcon />
-          Promotions
-        </p>
-      </Link>
-      <Link to="/admin/AddPromotions">
-        <p>
-          <PeopleIcon /> Add Promotions
-        </p>
-      </Link>
-      <Link to="/admin/reviews">
-        <p>
-          <RateReviewIcon />
-          Reviews
-        </p>
-      </Link>
       <Link to="/admin/Categories">
         <p>
           <RateReviewIcon />

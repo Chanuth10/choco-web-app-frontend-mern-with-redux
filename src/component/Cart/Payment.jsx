@@ -22,7 +22,7 @@ import Loading from "../../more/Loader";
 
 const Payment = ({ history }) => {
   const orderInfo = JSON.parse(sessionStorage.getItem("orderInfo"));
-
+  
   const dispatch = useDispatch();
   const stripe = useStripe();
   const elements = useElements();
@@ -56,7 +56,7 @@ const Payment = ({ history }) => {
         },
       };
       const { data } = await axios.post(
-        "https://choco-e-app.onrender.com/api/v2/payment/process",
+        "/api/v2/payment/process",
         paymentData,
         config
       );

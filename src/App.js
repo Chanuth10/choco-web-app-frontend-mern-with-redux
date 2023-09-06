@@ -38,14 +38,6 @@ import AllCategories from "./component/Admin/AllCategories";
 import CreateCategory from "./component/Admin/CreateCategory";
 import UpdateCategory from "./component/Admin/EditCategory";
 
-import Promotions from "./component/Promotions/ViewPromotions";
-import Reportpromo from "./component/Promotions/ReportPromo";
-import Addpromo from "./component/Promotions/AddPromotion";
-import Updatepromo from "./component/Promotions/UpdatePromotion";
-import Review from "./component/Review/ViewReview";
-import ReportReview from "./component/Review/ReportReview";
-import AddReview from "./component/Review/AddReview";
-
 import AllBrands from "./component/Admin/AllBrands";
 import CreateBrand from "./component/Admin/CreateBrand";
 import UpdateBrand from "./component/Admin/EditBrand";
@@ -56,7 +48,7 @@ function App() {
   const [stripeApiKey, setStripeApiKey] = useState("");
 
   async function getStripeApiKey() {
-    const { data } = await axios.get("https://choco-e-app.onrender.com/api/v2/stripeapikey");
+    const { data } = await axios.get("/api/v2/stripeapikey");
     setStripeApiKey(data.stripeApiKey);
   }
 
@@ -177,14 +169,6 @@ function App() {
           path="/edit/brand/:id"
           component={UpdateBrand}
         />
-        //Ihill Routes
-        <Route exact path="/admin/promotions" component={Promotions} />
-        <Route exact path="/admin/GenReport" component={Reportpromo} />
-        <Route exact path="/admin/AddPromotions" component={Addpromo} />
-        <Route exact path="/admin/UpdatePromotions" component={Updatepromo} />
-        <Route exact path="/admin/reviews" component={Review} />
-        <Route exact path="/admin/GenReport/review" component={ReportReview} />
-        <Route exact path="/admin/AddReview" component={AddReview} />
       </Switch>
     </Router>
   );
