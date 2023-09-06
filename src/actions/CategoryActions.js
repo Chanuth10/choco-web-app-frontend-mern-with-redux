@@ -28,7 +28,7 @@ export const createCategory = (categoryData) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      `/api/v2/category/new`,
+      `https://e-web-choco.onrender.com/api/v2/category/new`,
       categoryData,
       config
     );
@@ -50,7 +50,7 @@ export const getAdminCategory = () => async (dispatch) => {
   try {
     dispatch({ type: ADMIN_CATEGORY_REQUEST });
 
-    const { data } = await axios.get("/api/v2/admin/categories");
+    const { data } = await axios.get("https://e-web-choco.onrender.com/api/v2/admin/categories");
 
     dispatch({
       type: ADMIN_CATEGORY_SUCCESS,
@@ -69,7 +69,7 @@ export const deleteCategory = (id) => async (dispatch) => {
   try {
     dispatch({ type: DELETE_CATEGORY_REQUEST });
 
-    const { data } = await axios.delete(`/api/v2/category/${id}`);
+    const { data } = await axios.delete(`https://e-web-choco.onrender.com/api/v2/category/${id}`);
 
     dispatch({
       type: DELETE_CATEGORY_SUCCESS,
@@ -93,7 +93,7 @@ export const updateCategory = (id, categoryData) => async (dispatch) => {
     };
 
     const { data } = await axios.put(
-      `/api/v2/category/${id}`,
+      `https://e-web-choco.onrender.com/api/v2/category/${id}`,
       categoryData,
       config
     );
@@ -122,7 +122,7 @@ export const getCategoryDetails = (id) => async (dispatch) => {
   try {
     dispatch({ type: CATEGORY_DETAILS_REQUEST });
 
-    const { data } = await axios.get(`/api/v2/category/${id}`);
+    const { data } = await axios.get(`https://e-web-choco.onrender.com/api/v2/category/${id}`);
     dispatch({
       type: CATEGORY_DETAILS_SUCCESS,
       payload: data.category,

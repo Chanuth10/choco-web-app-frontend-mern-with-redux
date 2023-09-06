@@ -28,7 +28,7 @@ export const createBrand = (brandData) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      `/api/v2/brand/new`,
+      `https://e-web-choco.onrender.com/api/v2/brand/new`,
       brandData,
       config
     );
@@ -50,7 +50,7 @@ export const getAdminBrand = () => async (dispatch) => {
   try {
     dispatch({ type: ADMIN_BRAND_REQUEST });
 
-    const { data } = await axios.get("/api/v2/admin/brands");
+    const { data } = await axios.get("https://e-web-choco.onrender.com/api/v2/admin/brands");
 
     dispatch({
       type: ADMIN_BRAND_SUCCESS,
@@ -69,7 +69,7 @@ export const deleteBrand = (id) => async (dispatch) => {
   try {
     dispatch({ type: DELETE_BRAND_REQUEST });
 
-    const { data } = await axios.delete(`/api/v2/brand/${id}`);
+    const { data } = await axios.delete(`https://e-web-choco.onrender.com/api/v2/brand/${id}`);
 
     dispatch({
       type: DELETE_BRAND_SUCCESS,
@@ -93,7 +93,7 @@ export const updateBrand = (id, brandData) => async (dispatch) => {
     };
 
     const { data } = await axios.put(
-      `/api/v2/brand/${id}`,
+      `https://e-web-choco.onrender.com/api/v2/brand/${id}`,
       brandData,
       config
     );
@@ -122,7 +122,7 @@ export const getBrandDetails = (id) => async (dispatch) => {
   try {
     dispatch({ type: BRAND_DETAILS_REQUEST });
 
-    const { data } = await axios.get(`/api/v2/brand/${id}`);
+    const { data } = await axios.get(`https://e-web-choco.onrender.com/api/v2/brand/${id}`);
     dispatch({
       type: BRAND_DETAILS_SUCCESS,
       payload: data.brand,
