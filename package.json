@@ -19,6 +19,7 @@
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.21.4",
+    "caniuse-lite": "^1.0.30001527",
     "chart.js": "^3.6.2",
     "country-state-city": "^3.0.1",
     "eslint": "^7.32.0",
