@@ -25,7 +25,7 @@ import {
   UPDATE_PRODUCT_SUCCESS,
   ALL_REVIEW_REQUEST,
   ALL_REVIEW_SUCCESS,
-  ALL_REVIEW_FAIL
+  ALL_REVIEW_FAIL,
 } from "../constans/ProductConstans";
 
 export const getProduct =
@@ -83,7 +83,11 @@ export const newReview = (reviewData) => async (dispatch) => {
       headers: { "Content-Type": "application/json" },
     };
 
-    const { data } = await axios.post(`/api/v2/product/review`, reviewData, config);
+    const { data } = await axios.post(
+      `/api/v2/product/review`,
+      reviewData,
+      config
+    );
 
     dispatch({
       type: NEW_REVIEW_SUCCESS,
@@ -207,7 +211,6 @@ export const getAllReviews = (id) => async (dispatch) => {
     });
   }
 };
-
 
 // Delete Review of a Product ------ Admin
 export const deleteReviews = (reviewId, productId) => async (dispatch) => {
