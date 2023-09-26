@@ -21,7 +21,7 @@ const ConfirmOrder = ({ history }) => {
 
     const subtotal = productPrice 
       // eslint-disable-next-line
-    const shippingCharges = productPrice > 99 ? 0 : 50;
+    const shippingCharges = productPrice > 99 ? 0 : 1;
     
     const totalPrice = subtotal + shippingCharges;
   
