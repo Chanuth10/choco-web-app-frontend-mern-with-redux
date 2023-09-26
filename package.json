@@ -46,5 +46,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://e-web-choco.onrender.com"
+  "proxy": "http://localhost:4000"
 }

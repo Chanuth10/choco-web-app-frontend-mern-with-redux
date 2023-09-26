@@ -339,7 +339,7 @@ const ProductDetails = ({ match, history }) => {
                     margin: "1vmax 0px",
                     fontFamily: "sans-serif",
                     padding: "10px 15px",
-                    background: "#3BB77E",
+                    background: "#917236",
                     border: "none",
                     cursor: "pointer",
                     color: "#fff",

@@ -9,7 +9,6 @@ import PhoneIcon from "@material-ui/icons/Phone";
 import TransferWithinAStationIcon from "@material-ui/icons/TransferWithinAStation";
 import { Country, State } from "country-state-city";
 import { saveShippingInfo } from "../../actions/CartAction";
-import BottomTab from "../../more/BottomTab";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -19,10 +18,10 @@ const Shipping = ({ history }) => {
   const { shippingInfo } = useSelector((state) => state.cart);
 
   const [address, setAddress] = useState(shippingInfo.address);
-  // eslint-disable-next-line
+ 
   const [state, setState] = useState(shippingInfo.state);
   const [country, setCountry] = useState(shippingInfo.country);
-  // eslint-disable-next-line
+ 
   const [phoneNo, setPhoneNo] = useState(shippingInfo.phoneNo);
 
   const shippingSubmit = (e) => {
@@ -132,7 +131,6 @@ const Shipping = ({ history }) => {
         draggable
         pauseOnHover
       />
-      <BottomTab />
     </>
   );
 };

@@ -18,7 +18,7 @@ const Notfound = () => {
         <Link
           to="/"
           style={{
-            color: "#3BB77E",
+            color: "#917236",
             fontSize: "1.5vmax",
             fontFamily: "sans-serif",
             padding: "1vmax 0",

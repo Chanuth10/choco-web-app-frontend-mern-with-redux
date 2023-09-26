@@ -13,7 +13,7 @@ const { product,loading } = useSelector(
         value: review.rating,
         readOnly: true,
         precision: 0.5,
-        color:"#3BB77E"
+        color:"#917236"
       };
 
     return (
