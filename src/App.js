@@ -46,13 +46,13 @@ function App() {
   const { isAuthenticated, user } = useSelector((state) => state.user);
 
   const [stripeApiKey, setStripeApiKey] = useState("");
-
+  
   async function getStripeApiKey() {
     const { data } = await axios.get("/api/v2/stripeapikey");
     setStripeApiKey(data.stripeApiKey);
-    console.log(data.stripeApiKey);
+    console.log("Updated Stripe API Key  inside the getStripeApiKey() function:", data.stripeApiKey);
   }
-
+  
   useEffect(() => {
     WebFont.load({
       google: {
@@ -62,6 +62,7 @@ function App() {
 
     Store.dispatch(loadUser());
     getStripeApiKey();
+    console.log("Updated Stripe API Key inside the useeffect", stripeApiKey);
   }, [stripeApiKey]);
   
   return (
