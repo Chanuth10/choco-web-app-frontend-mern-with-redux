@@ -6,7 +6,7 @@ const Loading = () => {
     <div className="loading">
       <input type="checkbox" id="check" />
       <label for="check" className="loadinglabel">
-        <div class="check-icon"></div>
+        <div className="check-icon"></div>
       </label>
     </div>
   );

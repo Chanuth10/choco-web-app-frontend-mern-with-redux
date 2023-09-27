@@ -50,6 +50,7 @@ function App() {
   async function getStripeApiKey() {
     const { data } = await axios.get("/api/v2/stripeapikey");
     setStripeApiKey(data.stripeApiKey);
+    console.log(data.stripeApiKey);
   }
 
   useEffect(() => {
@@ -61,8 +62,8 @@ function App() {
 
     Store.dispatch(loadUser());
     getStripeApiKey();
-  }, []);
-
+  }, [stripeApiKey]);
+  
   return (
     <Router>
       {isAuthenticated && <UserData user={user} />}
