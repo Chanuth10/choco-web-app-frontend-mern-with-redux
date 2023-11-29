@@ -129,7 +129,7 @@ console.log("login "+isAuthenticated)
                 onChange={(e) => setLoginPassword(e.target.value)}
               />
             </div>
-            <Link to="/password/forgot">Forgot Password ?</Link>
+            <Link to="#">Forgot Password ?</Link>
             <input type="submit" value="Login" className="loginBtn" />
             <Link to="/">
               <span>Login as a guest ?</span>

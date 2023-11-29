@@ -53,7 +53,7 @@ const Cart = ({ history }) => {
         <div className="emptyCart">
           <RemoveShoppingCartIcon />
           <Typography>No Items In Cart</Typography>
-          <Link to="/products">View Products</Link>
+          <Link to="/">View Products</Link>
         </div>
       ) : (
         <>
@@ -90,7 +90,7 @@ const Cart = ({ history }) => {
                       +
                     </button>
                   </div>
-                  <p className="cartSubtotal">{`$${
+                  <p className="cartSubtotal">{`Rs. ${
                     item.price * item.quantity
                   }`}</p>
                 </div>
@@ -100,7 +100,7 @@ const Cart = ({ history }) => {
               <div></div>
               <div className="cartGrossProfitBox">
                 <p>Price Total</p>
-                <p>$ {totalPrice}</p>
+                <p>Rs {totalPrice}.00</p>
               </div>
               <div></div>
               <div className="checkOutBtn">

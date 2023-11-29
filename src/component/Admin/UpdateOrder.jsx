@@ -133,7 +133,7 @@ const UpdateOrder = ({ history, match }) => {
                           </Link>{" "}
                           <span>
                             {item.quantity} X ${item.price} ={" "}
-                            <b>${item.price * item.quantity}</b>
+                            <b>Rs. {item.price * item.quantity}</b>
                           </span>
                         </div>
                       ))}

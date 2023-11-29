@@ -94,7 +94,7 @@ const AllProducts = ({ history }) => {
 
     {
       field: "price",
-      headerName: "Price ($)",
+      headerName: "Price (Rs)",
       type: "number",
       minWidth: 150,
       flex: 0.5,

@@ -129,7 +129,7 @@ const ProductDetails = ({ match, history }) => {
                     display: "flex",
                   }}
                 >
-                  <h1>{`$${product.price}`}</h1>
+                  <h1>{`Rs. ${product.price}.00`}</h1>
                   <h1 className="discountPrice">
                     {product.offerPrice > 0 ? `$${product.offerPrice}` : ""}
                   </h1>
