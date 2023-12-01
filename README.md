@@ -16,7 +16,26 @@ MERN is a full-stack web development framework, composed of four technologies Mo
 
 `ReactJS`: It is a library created by Facebook. It is used to build UI components that create the user interface of the single page web application.
 
-<img src="images/MERN.png" width="80%" >
+![image](https://github.com/Chanuth-silva10/choco-web-app-frontend-mern-with-redux/assets/80547770/d6c2adb0-9261-4761-8452-de247060d645)
+
+
+# Project setup description
+To just get it running after you `git clone`, set up [GIT URL](https://github.com/Chanuth-silva10/choco-web-app-frontend-mern-with-redux.git), and then follow these CLI steps:
+
+To develop it yourself from scratch, follow CLI steps below, and copy the code from this repo to fill in the files you create.
+
+<details>
+<summary><span style="font-size:x-large">Frontend Setup</span></summary>
+
+```bash
+cd frontend
+npm install
+npm install -g nodemon
+npm ren dev `or`  npm start 
+```
+
+</details>
+
 
 # Customer Login
 
