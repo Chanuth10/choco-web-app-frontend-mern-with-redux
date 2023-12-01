@@ -38,7 +38,7 @@ npm ren dev `or`  npm start
 
 # Backend Details
 
-To just get it running after you `git clone` for our backend url, set up [GIT URL]([https://github.com/Chanuth-silva10/choco-web-app-frontend-mern-with-redux.git](https://github.com/Chanuth-silva10/choco-web-app-backend-mern-with-redux.git),
+To just get it running after you `git clone`, set up [GIT URL](https://github.com/Chanuth-silva10/choco-web-app-frontend-mern-with-redux.git](https://github.com/Chanuth-silva10/choco-web-app-backend-mern-with-redux.git)
 
 
 # Customer Login
