@@ -102,7 +102,7 @@ const UpdateOrder = ({ history, match }) => {
 
                     <div>
                       <p>Amount:</p>
-                      <span>${order.totalPrice && order.totalPrice}</span>
+                      <span>Rs .{order.totalPrice && order.totalPrice}</span>
                     </div>
                   </div>
 
@@ -132,7 +132,7 @@ const UpdateOrder = ({ history, match }) => {
                             {item.name}
                           </Link>{" "}
                           <span>
-                            {item.quantity} X ${item.price} ={" "}
+                            {item.quantity} X Rs .{item.price} ={" "}
                             <b>Rs. {item.price * item.quantity}</b>
                           </span>
                         </div>
