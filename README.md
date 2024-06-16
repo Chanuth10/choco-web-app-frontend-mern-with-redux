@@ -55,13 +55,6 @@ This is the frontend of the Choco Web App, built using the MERN stack (MongoDB, 
     - `store`: Redux store setup
     - `styles`: CSS styles
 
-## Contributing
-Contributions are welcome! Please fork the repository and submit a pull request.
-
-## License
-This project is licensed under the MIT License.
-
-
 
 # Screenshots
 
